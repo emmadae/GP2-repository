@@ -38,9 +38,9 @@ function playersInfo(){
     $("#user3Piece").attr("src", p3Info.user_image);
     $("#user3Money").text(p3Info.user_money);
 
-    $("#user4Name").text(p4Info.user_name);
+    $("#user-4").text(p4Info.user_name);
     $("#user4Piece").attr("src", p4Info.user_image);
-    $("#user4Money").text(p4Info.user_money);
+    $("#user-4").text(p4Info.user_money);
 
   });
 }
@@ -394,7 +394,13 @@ function activeOff(previous, statusCheck) {
 }
 socket.on("activeGreen", function(active, previous){
     $(".user-"+active).css("background-color", "#41994e");
+<<<<<<< HEAD
     $(".user-"+previous).css("background-color","white");
+=======
+    $(".user-"+active).css("color", "white");
+    $(".user-"+previous).css("background-color","white");
+    $(".user-"+active).css("color", "black");
+>>>>>>> workingBranch
     $(".user-btn:hover").css("background-color", "#41994e");
 
 
