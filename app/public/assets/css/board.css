@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
   grid-row: 3;
   margin-top:8%;
   margin-left:20px;
-} 
+}
 
 .chance-deck h2{
   font-size:8px;
@@ -285,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
 .right-row {
   grid-column: 11;
   grid-row: 2 / 11;
-} 
+}
 .right-row  .container-game {
   transform: translate(-50%, -50%) rotate(270deg);
 }
@@ -296,6 +296,13 @@ h1, h2, h3, h4, h5, h6 {
 .space {
   background: #fafaf8; /* board color */
   text-align: center;
+  position: relative;
+}
+
+.board-position-piece{
+  position: absolute;
+  top: 25%;
+  z-index: 999;
 }
 
 .space .container-game {
@@ -319,7 +326,7 @@ h1, h2, h3, h4, h5, h6 {
 .space .price {
   font-size: 5px;
   padding-bottom: 5px;
-} 
+}
 
 .space .corner .container-game {
   justify-content: space-around;
@@ -392,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
 .go {
   grid-column: 11;
   grid-row: 11 / 12;
-  position: relative;  
+  position: relative;
 }
 
 .go .container-game {
@@ -506,7 +513,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .free-parking  .container-game {
-  justify-content: center; 
+  justify-content: center;
   transform: rotate(135deg);
   margin-left:4px;
   margin-top:4px;
